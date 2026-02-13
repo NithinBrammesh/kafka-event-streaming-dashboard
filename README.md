@@ -1,56 +1,65 @@
 # Real-Time Order Streaming Platform
 
-A real-time event-driven data streaming system built using Apache Kafka, Node-RED, Docker, and React.
+A real-time event-driven data streaming platform built using Apache Kafka, Node-RED, Docker, and React.
 
-This project demonstrates how streaming architectures process live data events, expose APIs, and provide real-time dashboards for analytics.
+This project demonstrates how modern streaming architectures process live data events asynchronously, expose APIs, and provide real-time analytics dashboards.
 
 ---
 
 ## 🚀 Project Overview
 
-The platform ingests order data from CSV/local sources, streams events through Kafka, processes them using Node-RED workflows, and displays live insights through a React dashboard.
+The system ingests order data from CSV/local sources, streams events through Kafka topics, processes data using Node-RED workflows and ksqlDB, and visualizes live insights via a React dashboard.
 
-Key goals:
+The goal of this project is to simulate a production-style event-driven backend system with real-time processing and DevOps-oriented deployment.
 
-- Demonstrate event-driven architecture
-- Real-time data processing
-- Streaming analytics visualization
-- Containerized development environment
+### Key Objectives
+
+- Implement event-driven architecture
+- Process real-time streaming data
+- Visualize analytics in real time
+- Demonstrate asynchronous system design
+- Use containerized infrastructure
 
 ---
 
 ## 🏗 Architecture
 
-Data Flow:
+### Data Flow
 
-Producer → Kafka Topic → Node-RED Consumer → WebSocket/API → React Dashboard
+Producer → Kafka Topic → ksqlDB Processing → Node-RED Consumer → WebSocket/API → React Dashboard
 
-Main Components:
+### Core Components
 
-- Apache Kafka – event streaming platform
-- ksqlDB – stream processing
-- Node-RED – orchestration and event flow
-- React – frontend dashboard
-- Docker – containerized setup
-- Swagger/OpenAPI – API documentation
+- **Apache Kafka** – distributed event streaming platform
+- **ksqlDB** – stream processing and aggregation
+- **Node-RED** – workflow orchestration and API layer
+- **React** – real-time dashboard frontend
+- **Docker** – containerized local environment
+- **Swagger/OpenAPI** – API contract and documentation
 
 ---
 
 ## ⚙️ Tech Stack
 
-Backend & Streaming:
+### Backend & Streaming
+
 - Apache Kafka
 - ksqlDB
 - Node-RED
+- WebSocket streaming
 
-Frontend:
+### Frontend
+
 - React.js
+- Chart visualizations
 
-DevOps:
+### DevOps
+
 - Docker
 - Docker Compose
 
-API Documentation:
+### API Documentation
+
 - OpenAPI / Swagger
 
 ---
